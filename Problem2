@@ -1,0 +1,8 @@
+def fibonacci_generalizado(a, b, n):
+    fib = [a, b]
+    for i in range(2, n):
+        fib.append(fib[-1] + fib[-2])
+    return fib
+
+# Ejemplo de uso
+print(fibonacci_generalizado(2, 3, 10))
